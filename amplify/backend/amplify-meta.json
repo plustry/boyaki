@@ -22,7 +22,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-boyaki-production-201754-deployment/amplify-cfn-templates/auth/boyakidfdab198-cloudformation-template.yml",
         "logicalId": "authboyakidfdab198"
       },
-      "lastPushTimeStamp": "2020-10-29T04:59:15.132Z",
+      "lastPushTimeStamp": "2020-10-29T05:14:42.882Z",
       "output": {
         "AppClientSecret": "t0j7p2sbd20dpqer81eo0pu1e9tc2ss9c5djdhbp9kq93drns6s",
         "UserPoolId": "us-east-1_h4KyjGXQh",
@@ -56,7 +56,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-boyaki-production-201754-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apiboyaki"
       },
-      "lastPushTimeStamp": "2020-10-29T04:59:15.135Z",
+      "lastPushTimeStamp": "2020-10-29T05:14:42.884Z",
       "lastPushDirHash": "58irkcpdBL3LUJai0Tu1dboafqg="
     }
   }
