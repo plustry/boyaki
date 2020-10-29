@@ -1,0 +1,63 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-boyaki-production-201754-authRole",
+      "UnauthRoleArn": "arn:aws:iam::887579298504:role/amplify-boyaki-production-201754-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::887579298504:role/amplify-boyaki-production-201754-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-boyaki-production-201754-deployment",
+      "UnauthRoleName": "amplify-boyaki-production-201754-unauthRole",
+      "StackName": "amplify-boyaki-production-201754",
+      "StackId": "arn:aws:cloudformation:us-east-1:887579298504:stack/amplify-boyaki-production-201754/3c153a00-190f-11eb-8770-0e6b672d4ae7",
+      "AmplifyAppId": "d14k3c9qaxk1fg"
+    }
+  },
+  "auth": {
+    "boyakidfdab198": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-boyaki-production-201754-deployment/amplify-cfn-templates/auth/boyakidfdab198-cloudformation-template.yml",
+        "logicalId": "authboyakidfdab198"
+      },
+      "lastPushTimeStamp": "2020-10-29T04:59:15.132Z",
+      "output": {
+        "AppClientSecret": "t0j7p2sbd20dpqer81eo0pu1e9tc2ss9c5djdhbp9kq93drns6s",
+        "UserPoolId": "us-east-1_h4KyjGXQh",
+        "AppClientIDWeb": "71nd10lhtb6e395kb2mqtlp6l5",
+        "AppClientID": "4vro1qhjk0j8rrb74abt966doa",
+        "IdentityPoolId": "us-east-1:5e747d12-5bd4-48d0-b8bb-8708681af717",
+        "IdentityPoolName": "boyakidfdab198_identitypool_dfdab198__production",
+        "UserPoolName": "boyakidfdab198_userpool_dfdab198"
+      },
+      "lastPushDirHash": "Z3qlSdALPV//pftPbBf6CuaCfu0="
+    }
+  },
+  "api": {
+    "boyaki": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authboyakidfdab198"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "vqe3m3i6qzdy7akorbxot22r64",
+        "GraphQLAPIEndpointOutput": "https://4trzy63fufdepe6fwdhsyinhye.appsync-api.us-east-1.amazonaws.com/graphql"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-boyaki-production-201754-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiboyaki"
+      },
+      "lastPushTimeStamp": "2020-10-29T04:59:15.135Z",
+      "lastPushDirHash": "58irkcpdBL3LUJai0Tu1dboafqg="
+    }
+  }
+}
